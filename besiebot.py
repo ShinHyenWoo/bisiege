@@ -11,7 +11,7 @@ async def on_ready():
 
 @bot.command(aliases=['ㄱㅌㅇ', '태윤'])
 async def 김태윤(ctx):
-	await ctx.send("죽어!")
+	await ctx.send("제발 좀 죽어!")
 
 
 @bot.command(aliases=['qjtjzj'])
@@ -36,7 +36,7 @@ async def 나이트(ctx):
 
 @bot.command(aliases=['glfepthfvm', '솔프', 'thfvm'])
 async def 힐데솔프(ctx):
-    embed = discord.Embed(title='힐데그린 솔로 프리스트', description='2줄', color=0x8df22e)
+    embed = discord.Embed(title='힐데그림 솔로 프리스트', description='2줄', color=0x8df22e)
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/956204818425319424/31851a2cb8922521.png")
     embed.add_field(name="큰 룬", value="올 회복", inline=False)
     embed.add_field(name="작은 룬", value="올 회복", inline=True)
