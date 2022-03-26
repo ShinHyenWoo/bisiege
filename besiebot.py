@@ -17,7 +17,7 @@ async def chcange_status():
 
 @bot.command(aliases=['ㄱㅌㅇ', '태윤'])
 async def 김태윤(ctx, *, msg):
-	await ctx.send("제발 좀 죽어! 뒤에 {msg}같은 이상한거 붙이지 마")
+	await ctx.send("김태윤 제발 좀 죽어! 뒤에 {msg}같은 이상한거 붙이지 마")
 
 
 @bot.command(aliases=['qjtjzj'])
