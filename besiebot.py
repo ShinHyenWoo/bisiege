@@ -215,10 +215,10 @@ async def 네크로맨서(ctx):
     embed.add_field(name="유물", value="아직 몰?루", inline=False)
     await ctx.send(embed=embed)
 
-@bot.command(aliases=['네크', 'spzmfhaostj', 'spzm'])
-async def 네크로맨서(ctx):
-    embed = discord.Embed(title='네크로맨서', description='아직 몰?루', color=0x8df22e)
-    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957154129652908042/d04cdd35602008640f3ab0a4cafcedee7f9ba364054dd60c83c28d9a2d42088efc93ffb2060cec358ca19c01c3720ae339231419e06202a976d1c94f8913b459a8f5fd46d3a6b97499b5473be5f6119715989e1de9c7f99703436e21e35c7a6e.png")
+@bot.command(aliases=['qkem'])
+async def 바드(ctx):
+    embed = discord.Embed(title='바드', description='아직 몰?루', color=0x8df22e)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957154656759451678/Screenshot_20220326-144844_Castle_Defense_Online.jpg")
     embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
     embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
     embed.add_field(name="템", value="아직 몰?루", inline=False)
