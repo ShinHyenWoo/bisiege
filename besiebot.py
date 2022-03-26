@@ -124,6 +124,56 @@ async def 아처(ctx):
     embed.add_field(name="유물", value="궁닐 페일 아론", inline=False)
     await ctx.send(embed=embed)
 
+@bot.command(aliases=['dpswlsldj', '엔지', 'dpswl'])
+async def 엔지니어(ctx):
+    embed = discord.Embed(title='엔지니어', description='아직 몰?루', color=0x8df22e)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957152552565239838/Screenshot_20220326-144154_Castle_Defense_Online.jpg")
+    embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
+    embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
+    embed.add_field(name="템", value="아직 몰?루", inline=False)
+    embed.add_field(name="유물", value="아직 몰?루", inline=False)
+    await ctx.send(embed=embed)
+
+@bot.command(aliases=['tnpvm', '쉪', 'tnpv'])
+async def 쉐프(ctx):
+    embed = discord.Embed(title='쉐프', description='아직 몰?루', color=0x8df22e)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957152716210180116/Screenshot_20220326-144240_Castle_Defense_Online.jpg")
+    embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
+    embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
+    embed.add_field(name="템", value="아직 몰?루", inline=False)
+    embed.add_field(name="유물", value="아직 몰?루", inline=False)
+    await ctx.send(embed=embed)
+
+@bot.command(aliases=['머스킷', '머킷', 'ajtmzltxldj', 'ajtmzlt', 'ajzlt'])
+async def 머스킷티어(ctx):
+    embed = discord.Embed(title='머스킷티어', description='아직 몰?루', color=0x8df22e)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957152879653814312/Screenshot_20220326-144320_Castle_Defense_Online.jpg")
+    embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
+    embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
+    embed.add_field(name="템", value="아직 몰?루", inline=False)
+    embed.add_field(name="유물", value="아직 몰?루", inline=False)
+    await ctx.send(embed=embed)
+
+@bot.command(aliases=['emfndlem'])
+async def 드루이드(ctx):
+    embed = discord.Embed(title='드루이드', description='아직 몰?루', color=0x8df22e)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957152879653814312/Screenshot_20220326-144320_Castle_Defense_Online.jpg")
+    embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
+    embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
+    embed.add_field(name="템", value="아직 몰?루", inline=False)
+    embed.add_field(name="유물", value="아직 몰?루", inline=False)
+    await ctx.send(embed=embed)
+
+@bot.command(aliases=['fhrm'])
+async def 로그(ctx):
+    embed = discord.Embed(title='로그', description='아직 몰?루', color=0x8df22e)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957153320244502558/Screenshot_20220326-144458_Castle_Defense_Online.jpg")
+    embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
+    embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
+    embed.add_field(name="템", value="아직 몰?루", inline=False)
+    embed.add_field(name="유물", value="아직 몰?루", inline=False)
+    await ctx.send(embed=embed)
+
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
