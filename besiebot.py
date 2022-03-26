@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix="!") #접두사를 지정
 
 @bot.event
 async def on_ready():
-    print("작동 준비 완료.")
+    await send("")
     game = discord.Game("명일방주")
     await bot.change_presence(status=discord.Status.online, activity=game)
 
@@ -208,7 +208,7 @@ async def 사무라이(ctx):
 @bot.command(aliases=['네크', 'spzmfhaostj', 'spzm'])
 async def 네크로맨서(ctx):
     embed = discord.Embed(title='네크로맨서', description='아직 몰?루', color=0x8df22e)
-    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957154241842122752/5567f5c0c510ee7ef82b92af42777ad407362f59f4725d88ac9f793165a941c923600eaf3787492058b2ee13be58c88ac4ace650864ea06d527b0390d1d47ba611ac649b6b69591e925e03b516b33b57e206e0bf26647e3eaaa3847173830d44.png")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957154129652908042/d04cdd35602008640f3ab0a4cafcedee7f9ba364054dd60c83c28d9a2d42088efc93ffb2060cec358ca19c01c3720ae339231419e06202a976d1c94f8913b459a8f5fd46d3a6b97499b5473be5f6119715989e1de9c7f99703436e21e35c7a6e.png")
     embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
     embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
     embed.add_field(name="템", value="아직 몰?루", inline=False)
