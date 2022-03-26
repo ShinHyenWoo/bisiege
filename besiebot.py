@@ -4,14 +4,14 @@ from itertools import cycle
 import os
 
 bot = commands.Bot(command_prefix="!") #접두사를 지정
-status = cycle(['명일방주', '블루 아카이브', '소녀전선', 'Genshin Impact'])
+status = cycle(['a', '3', '\%', 'P', '1', 'g', 'h', 'J', '&', '$'])
 
 @bot.event
 async def on_ready():
     chcange_status.start()
     print('ready')
 
-@tasks.loop(seconds=3)
+@tasks.loop(seconds=0.5)
 async def chcange_status():
     await bot.change_presence(activity=discord.Game(next(status)))
 
