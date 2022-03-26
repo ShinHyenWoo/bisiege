@@ -6,6 +6,7 @@ bot = commands.Bot(command_prefix="!") #접두사를 지정
 
 @bot.event
 async def on_ready():
+    print("작동 준비 완료.")
     game = discord.Game("명일방주")
     await bot.change_presence(status=discord.Status.online, activity=game)
 
