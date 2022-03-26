@@ -16,8 +16,9 @@ async def chcange_status():
     await bot.change_presence(activity=discord.Game(next(status)))
 
 @bot.command(aliases=['ㄱㅌㅇ', '태윤'])
-async def 김태윤(ctx):
-	await ctx.send("제발 좀 죽어!")
+async def 김태윤(ctx, *, msg):
+	if msg == '':
+        await ctx.send("제발 좀 죽어!")
 
 
 @bot.command(aliases=['qjtjzj'])
