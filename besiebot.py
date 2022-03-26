@@ -224,6 +224,15 @@ async def 네크로맨서(ctx):
     embed.add_field(name="유물", value="아직 몰?루", inline=False)
     await ctx.send(embed=embed)
 
+@bot.command(aliases=[])
+async def 가디언(ctx):
+    embed = discord.Embed(title='가디언', description='아직 몰?루', color=0x8df22e)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/883023892262834236/957154656541368390/Screenshot_20220326-144838_Castle_Defense_Online.jpg")
+    embed.add_field(name="큰 룬", value="아직 몰?루", inline=False)
+    embed.add_field(name="작은 룬", value="아직 몰?루", inline=True)
+    embed.add_field(name="템", value="아직 몰?루", inline=False)
+    embed.add_field(name="유물", value="아직 몰?루", inline=False)
+    await ctx.send(embed=embed)
 
 @bot.event
 async def on_command_error(ctx, error):
