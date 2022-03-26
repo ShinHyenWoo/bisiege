@@ -11,7 +11,7 @@ async def on_ready():
     chcange_status.start()
     print('ready')
 
-@tasks.loop(seconds=3600)
+@tasks.loop(seconds=3)
 async def chcange_status():
     await bot.change_presence(activity=discord.Game(next(status)))
 
