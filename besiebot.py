@@ -1,14 +1,19 @@
 import asyncio, discord
-from discord.ext import commands
+from discord.ext import commands, tasks
+from itertools import cycle
 import os
 
 bot = commands.Bot(command_prefix="!") #접두사를 지정
+status = cycle(['명일방주', '블루 아카이브', '소녀전선', 'Genshin Impact'])
 
 @bot.event
 async def on_ready():
-    await send("")
-    game = discord.Game("명일방주")
-    await bot.change_presence(status=discord.Status.online, activity=game)
+    chcange_status.start()
+    print('ready')
+
+@tasks.loop(seconds=3600)
+async def chcange_status():
+    await bot.change_presence(activity=discord.Game(next(status)))
 
 @bot.command(aliases=['ㄱㅌㅇ', '태윤'])
 async def 김태윤(ctx):
